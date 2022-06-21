@@ -3,7 +3,7 @@
 In the command line, cd into a directory where you’d like to store your code, then run the following command:
 
 ```
-django-admin startproject mysite
+django-admin startproject mysite 
 ```
 
 This will create a mysite directory in your current directory
@@ -19,7 +19,6 @@ In the mysite directory run the following commands:
 ```
  py manage.py runserver
 ```
-&nbsp; 
 
 If you have unapplied migrations; your app may not work properly until they are applied.
 
@@ -28,6 +27,7 @@ Run the following command to apply:
 ```
 python manage.py migrate
 ```
+&nbsp; 
 
 Changing the port.  
 
