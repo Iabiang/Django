@@ -21,3 +21,29 @@ polls/
     tests.py
     views.py
 ```
+
+### Writing first view
+
+Let’s write the first view. Open the file **polls/views.py** and put the following Python code in it:
+
+```
+from django.http import HttpResponse
+
+
+def index(request):
+    return HttpResponse("Hello, world. You're at the polls index.")
+```
+
+This is the simplest view possible in Django. To call the view, we need to map it to a URL - and for this we need a URLconf.  
+To create a URLconf in the polls directory, create a file called urls.py  
+
+In the polls/urls.py file include the following code:  
+```
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+    path('', views.index, name='index'),
+]
+```
