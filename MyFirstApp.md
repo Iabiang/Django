@@ -47,3 +47,10 @@ urlpatterns = [
     path('', views.index, name='index'),
 ]
 ```
+
+You have now wired an index view into the URLconf. Verify it’s working with the following command:
+```
+py manage.py runserver
+```
+
+`If you get an error page here, check that you’re going to http://localhost:8000/polls/ and not http://localhost:8000/.`
