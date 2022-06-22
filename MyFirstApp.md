@@ -49,7 +49,7 @@ urlpatterns = [
 ```
 The next step is to point the root URLconf at the polls.urls module. In mysite/urls.py, add an import for django.urls.include and insert an include() in the urlpatterns list, so you have:  
 
-`mysite/urls.py`
+In the `mysite/urls.py` folder
 
 ```
 from django.contrib import admin
